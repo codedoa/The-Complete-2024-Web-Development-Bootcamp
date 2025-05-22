@@ -3,19 +3,21 @@ var gamePattern = [];
 var clickedPattern = [];
 var currentLevel=0;
 
+$(".container").addClass("beforestartgame");
+
 /* $("#level-title").click(function(event) {
   event.preventDefault();
   location.reload();
 });
  */
 
-$("#reset").click(function(event) {
+$("#restart").click(function(event) {
   event.preventDefault();
   location.reload();
 });
 
 function endGame() {
-  $("#level-title").text("Oooupsy... Level " + currentLevel + " was a bit too crunchy! Better Luck next time!");
+  $("#level-title").text("Oooupsy... Level " + currentLevel + " was a bit too crunchy! \nBetter Luck next time!");
   $(".container").addClass("endgame");
   $(".btn").addClass("btnhdn");
   $("body").addClass("game-over");
@@ -52,10 +54,10 @@ function livenButton(color) {
 }
   
 function iClick(currentColor) {
-  let shit = $("#"+currentColor);
-  $(shit[0]).addClass("pressed");
+  let focusColor = $("#"+currentColor);
+  $(focusColor[0]).addClass("pressed");
   setTimeout(function () {
-    $(shit[0]).removeClass("pressed");
+    $(focusColor[0]).removeClass("pressed");
   }, 100);
   livenButton(currentColor);
   clickedPattern.push(currentColor);
@@ -71,8 +73,7 @@ function checkAnswer(currentLevel) {
   }
   if(clickedPattern.length === gamePattern.length) {
     clickedPattern = [];
-    setTimeout(5000);
-    nextSequence();
+    setTimeout(nextSequence(),2000);
   }
 }
 
@@ -82,13 +83,19 @@ $(".btn").each(function() {
   })
 });
 
-/* $(document).on("keydown", function () {
+/* // Original implementation waiting on keypress to start the new game
+ $(document).on("keydown", function () {
   if(clickedPattern.length === gamePattern.length) {
     nextSequence();
   }
-}); */
+}); 
+*/
 
-$(".resstartbtn").on("click", function () {
+$("#start").on("click", function () {
+  $(this).addClass("btnhdn");
+  $("#restart").removeClass("btnhdn");
+  $(".btn").removeClass("btnhdn");
+  $(".container").removeClass("startgame");
   if(clickedPattern.length === gamePattern.length) {
     nextSequence();
   }
