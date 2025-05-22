@@ -82,7 +82,13 @@ $(".btn").each(function() {
   })
 });
 
-$(document).on("keydown", function () {
+/* $(document).on("keydown", function () {
+  if(clickedPattern.length === gamePattern.length) {
+    nextSequence();
+  }
+}); */
+
+$(".resstartbtn").on("click", function () {
   if(clickedPattern.length === gamePattern.length) {
     nextSequence();
   }

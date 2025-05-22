@@ -17,9 +17,10 @@ body {
 
 }
 
-.resetbtn {
+.restartbtn {
   display: block;
   width: 20%;
+  align-items: center;
   margin: auto;
   background-color: inherit;
   font-family: 'Press Start 2P', strong;
