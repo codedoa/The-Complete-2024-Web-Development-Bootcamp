@@ -1,0 +1,44 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+p {
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+
+p::first-letter {
+  color:#891941;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+p::after {
+  content: "!";
+  color:#891941;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+p#futatsu::after {
+  content: ",";
+}
+
+.indabox {
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 100px;
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
+}
+
+.memage {
+  border: 5px solid white;
+  width: 100%;
+}

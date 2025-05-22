@@ -1,0 +1,113 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+  background-color: lightgrey;
+}
+
+.main {
+  min-width: 300px;
+}
+
+.bb {
+  color: midnightblue;  
+}
+
+.superhero {
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  position: relative;
+}
+
+.card {
+  flex: 1;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 20px 20px;
+
+  font-size: smaller;
+  position: relative;
+  height: 50%;
+
+  min-width: 200px;
+  border: 0.3rem dotted rgb(235, 84, 67);
+  border-radius: 5%;
+  img {
+    border-radius: 5%;
+  }
+  p {
+    text-align: justify;
+    padding: 10px 10px 10px 10px;
+  }
+}
+
+.logo {
+  margin-right: 30px;
+  border: 0.3rem dotted rgb(235, 84, 67);
+  border-radius: 50%;
+}
+
+h1 {
+  font-size: 3rem;
+  max-width: 50%;
+  text-transform: uppercase;
+  text-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: baseline;
+  height: 187px;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  padding: 10px 10px 10px 10px;
+}
+
+.card-title {
+  text-wrap: nowrap;
+}
+
+.tile-image {
+  float: left;
+  width: 50%;
+}
+
+div.right.card {
+  img { 
+    float: right;
+    margin-left: 20px;
+  }
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+}
+
+@media (max-width: 600px) {
+  .card {
+    display: block;
+    max-width: 100%;
+    border-radius: 5%;
+    img {
+      flex: 1;
+    }
+    p {
+      flex:1;
+    }
+  }
+}
+
+@media (min-width: 601px) {
+  .card {
+    display: inline-block;
+    max-width: 900px;
+  }
+}

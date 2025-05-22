@@ -1,0 +1,11 @@
+<burger lang="MEAT">
+    <bun topping="sesame" toasted>
+        <latuce>3</latuce>
+        <bacon>2</bacon>
+        <sauce>Mayo</sauce>
+        <sauce>Ketchup</sauce>
+        <sauce>Mustard</sauce>
+        <tomato><1/tomato>
+        <patty type="beef" style="homestyle"></patty>
+    </bun>
+</burger>

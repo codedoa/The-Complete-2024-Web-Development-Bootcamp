@@ -1,0 +1,39 @@
+.big-title {
+  font-size: 4rem;
+  color: red;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.margin-20 {
+  margin: 10px;
+}
+
+.forange {
+  color: orange;
+}
+
+.fblue {
+  color: blue;
+}
+
+.fgreen {
+  color: green;
+}
+
+.fviolet {
+  color: violet;
+}
+
+.fpurple {
+  color: purple;
+}
+
+.float {
+  text-align: end;
+  margin: 20px;
+  position: relative;
+}
+
+.bottomspacewhenhidden {
+  padding-bottom: 50px;
+}

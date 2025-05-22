@@ -1,0 +1,39 @@
+/* 
+IMPORTANT: All code should be written in your CSS file.
+TODOs
+y1. Create a CSS file and incorporate it as an external stylesheet.
+y2. Use CSS to style each of the color titles to meaning. 
+Hint: Use the id to help if you don't know the words in spanish.
+y3. Use CSS to change all the color titles to have "font-weight: normal;"
+y4. Use CSS (not HTML) to make all the images 200px heigh and 200px wide. 
+*/
+img {
+  min-width: 50px;
+  width: 200px;
+  min-height: 50px;
+  height: 200px;
+}
+
+.color-title {
+  font-weight:  normal;
+}
+
+#red {
+  color: red;
+}
+
+#blue {
+  color: skyblue;
+}
+
+#orange {
+  color: orange;
+}
+
+#green {
+  color: green;
+}
+
+#yellow {
+  color: rgb(253, 229, 15);
+}
